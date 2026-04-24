@@ -27,7 +27,7 @@ export type Data = UserInfoResponse
 
 export const data = async (pageContext: PageContextServer): Promise<Data> => {
 	const { uuid } = pageContext.routeParams
-	const base = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000"
+	const base = import.meta.env.VITE_API_BASE_URL ?? "https://tabula.lepichu.deno.net"
 
 	console.log(`[+data] Fetching ${base}/users/${uuid}`)
 
