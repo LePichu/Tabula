@@ -3,5 +3,5 @@ import "../assets/app.css"
 </script>
 
 <template>
-  <slot />
+	<slot />
 </template>

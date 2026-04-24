@@ -19,5 +19,6 @@
 			"deno.unstable",
 			"node"
 		]
-	}
+	},
+	"unstable": ["fmt-component"]
 }

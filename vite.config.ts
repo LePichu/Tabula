@@ -7,14 +7,12 @@ export default defineConfig(({ mode }) => {
 	const env = loadEnv(mode, process.cwd(), "")
 	return {
 		plugins: [vike(), vue(), tailwindcss()],
-		server: {
-			proxy: {
-				"/api/users": {
-					target: "https://tabula.lepichu.deno.net",
-					changeOrigin: true,
-					rewrite: (path) => path.replace(/^\/api/, ""),
-				},
-			},
+		define: {
+			__API_BASE_URL__: JSON.stringify(
+				mode === "production"
+					? env.API_BASE_URL
+					: (env.API_BASE_URL_DEV ?? "http://localhost:8000"),
+			),
 		},
 	}
 })
