@@ -1,0 +1,21 @@
+{
+	"scripts": {
+		"dev": "vike dev",
+		"build": "vike build",
+		"preview": "vike build && vike preview"
+	},
+	"dependencies": {
+		"@tailwindcss/vite": "^4.2.4",
+		"tailwindcss": "^4.2.4",
+		"vike": "0.4.257",
+		"vike-vue": "^0.9.11",
+		"vue": "^3.5.32"
+	},
+	"devDependencies": {
+		"@types/node": "^25.6.0",
+		"@vitejs/plugin-vue": "^6.0.5",
+		"typescript": "^6.0.2",
+		"vite": "^8.0.8"
+	},
+	"type": "module"
+}

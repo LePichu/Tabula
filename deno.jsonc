@@ -1,0 +1,23 @@
+{
+	"fmt": {
+		"semiColons": false,
+		"useTabs": true
+	},
+	"tasks": {
+		"server": "cd server && deno run -A ./mod.ts",
+		"dev": "pnpm run dev",
+		"start": "deno task server & deno task dev"
+	},
+	"lint": {
+		"rules": {
+			"exclude": ["no-import-prefix"]
+		}
+	},
+	"compilerOptions": {
+		"lib": [
+			"deno.window",
+			"deno.unstable",
+			"node"
+		]
+	}
+}
