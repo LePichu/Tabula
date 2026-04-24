@@ -5,7 +5,9 @@
 		"preview": "vike build && vike preview"
 	},
 	"dependencies": {
+		"@hono/node-server": "^2.0.0",
 		"@tailwindcss/vite": "^4.2.4",
+		"hono": "^4.12.15",
 		"tailwindcss": "^4.2.4",
 		"vike": "0.4.257",
 		"vike-vue": "^0.9.11",
