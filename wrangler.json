@@ -1,0 +1,11 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "tabula",
+	"compatibility_date": "2026-04-24",
+	"compatibility_flags": ["nodejs_compat"],
+	"main": "dist/server/entry.mjs",
+	"assets": {
+		"directory": "./dist/client",
+		"binding": "ASSETS"
+	}
+}

@@ -1,13 +1,13 @@
 import vue from "@vitejs/plugin-vue"
 import tailwindcss from "@tailwindcss/vite"
 import vike from "vike/plugin"
-import { pages as vikeCloudflare } from "vike-cloudflare"
+import { cloudflare } from "@cloudflare/vite-plugin"
 import { defineConfig, loadEnv } from "vite"
 
 export default defineConfig(({ mode }) => {
 	const env = loadEnv(mode, process.cwd(), "")
 	return {
-		plugins: [vikeCloudflare(), vike(), vue(), tailwindcss()],
+		plugins: [cloudflare(), vike(), vue(), tailwindcss()],
 		server: {
 			proxy: {
 				"/api/users": {
