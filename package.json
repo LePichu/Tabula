@@ -5,7 +5,6 @@
 		"preview": "vike build && vike preview"
 	},
 	"dependencies": {
-		"@cloudflare/vite-plugin": "^1.33.1",
 		"@tailwindcss/vite": "^4.2.4",
 		"tailwindcss": "^4.2.4",
 		"vike": "0.4.257",
