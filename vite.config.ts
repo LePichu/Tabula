@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
 		server: {
 			proxy: {
 				"/api/users": {
-					target: env.VITE_API_BASE_URL ?? "http://localhost:8000",
+					target: env.VITE_API_BASE_URL ?? "https://tabula.lepichu.deno.net",
 					changeOrigin: true,
 					rewrite: (path) => path.replace(/^\/api/, ""),
 				},
